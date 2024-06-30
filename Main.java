@@ -15,9 +15,13 @@ public class Main {
         System.out.println("Enter details for Player B:");
         playerB = PlayerInitializer.inputPlayerInfo(scanner);
 
-        
+   
 
-       
+    // Start the game
+    MagicalArena arena = new MagicalArena(playerA, playerB);
+    arena.startGame();
+
+
     }
     
 }

@@ -15,4 +15,15 @@ public class Player {
         this.strength = strength;
         this.attack = attack;
     }
+
+
+     // Getter methods
+     public String getName() {
+        return name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
 }
