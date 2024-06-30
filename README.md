@@ -34,6 +34,17 @@ This is a simple console-based magical arena game implemented in Java. Two playe
 ## To execute the game 
 
 1. Extract Zip folder
-2. Navigate to src -> main
-3. javac Main.java
-4. java Main
+2. Navigate to the `src/main` directory of the extracted project.
+3. Compile the `Main.java` file using the `javac` command:
+     ```
+     javac Main.java
+     ```
+4. Execute the compiled Java program using the `java` command:
+     ```
+     java Main
+     ```
+
+5.  Follow the prompts in the terminal to enter details for Player A and Player B as the game initializes.
+   - Enjoy playing the Magical Arena game!
+
+Make sure you have Java Development Kit (JDK) installed on your system and configured in your PATH environment variable to successfully compile and run the Java program.
