@@ -48,6 +48,41 @@ public class MagicalArena {
         System.out.println(player1.getName() + " vs " + player2.getName());
         System.out.println();
 
+         
+
+         // Game loop
+         while (player1.isAlive() && player2.isAlive()) {
+            attacker.attack(defender);
+            if (!defender.isAlive()) {
+                break;
+            }
+
+            // Swap roles for the next turn
+            Player temp = attacker;
+            attacker = defender;
+            defender = temp;
+
+            // Add some delay for readability in console output
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+        announceWinner();
+
     }
+    
+    private void announceWinner() {
+        if (!player1.isAlive()) {
+            System.out.println(player2.getName() + " wins the game!");
+        } else if (!player2.isAlive()) {
+            System.out.println(player1.getName() + " wins the game!");
+        } else {
+            System.out.println("It's a draw!");
+        }
+    }
+    
     
 }
